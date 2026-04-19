@@ -649,6 +649,34 @@ strong {
   text-decoration: underline;
 }
 
+.form-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gold);
+  margin: 2rem 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.form-separator::before,
+.form-separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.form-separator::before {
+  margin-right: 1.5rem;
+}
+
+.form-separator::after {
+  margin-left: 1.5rem;
+}
+
 /* =============================================
    HOW WE WORK (PROCESS)
    ============================================= */
