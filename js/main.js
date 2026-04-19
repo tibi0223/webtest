@@ -52,6 +52,14 @@ if (contactForm) {
   });
 }
 
+// Force scroll to top on load to prevent jumping to form
+window.onload = () => {
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+};
+
 // Handle broken images — show placeholder block
 document.querySelectorAll('img').forEach(img => {
   img.addEventListener('error', function () {
