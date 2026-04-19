@@ -46,7 +46,7 @@ if (contactForm) {
     btn.style.background = '#1b5e20';
     contactForm.reset();
     setTimeout(() => {
-      btn.textContent = 'Ingyenes Ajánlatot Kérek';
+      btn.textContent = 'Ingyenes felmérést kérek';
       btn.style.background = '';
     }, 3000);
   });
